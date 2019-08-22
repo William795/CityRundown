@@ -11,6 +11,21 @@ import MapKit
 
 class LocationDetailViewController: UIViewController {
 
+    @IBOutlet weak var dayOnePrecipitation: UILabel!
+    @IBOutlet weak var dayOneHigh: UILabel!
+    @IBOutlet weak var dayOneLow: UILabel!
+    
+    @IBOutlet weak var dayTwoPrecipitation: UILabel!
+    @IBOutlet weak var dayTwoHigh: UILabel!
+    @IBOutlet weak var dayTwoLow: UILabel!
+    
+    @IBOutlet weak var dayThreePrecipitation: UILabel!
+    @IBOutlet weak var dayThreeHigh: UILabel!
+    @IBOutlet weak var dayThreeLow: UILabel!
+    
+    @IBOutlet weak var yelpMapview: MKMapView!
+    @IBOutlet weak var yelpTableview: UITableView!
+    
     var cityName: String = ""
     var cityAdmin: String = ""
     var cityCoords: CLLocationCoordinate2D? {
