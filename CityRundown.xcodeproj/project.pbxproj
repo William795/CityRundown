@@ -12,6 +12,7 @@
 		92220923230B428900B04353 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92220922230B428900B04353 /* Extensions.swift */; };
 		92220925230B467700B04353 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92220924230B467700B04353 /* LocationDetailViewController.swift */; };
 		92220927230C940400B04353 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92220926230C940400B04353 /* ForecastController.swift */; };
+		9222096423146F3800B04353 /* YelpLocationInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9222096323146F3800B04353 /* YelpLocationInfoVC.swift */; };
 		9253A29A2305E73900628071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253A2992305E73900628071 /* AppDelegate.swift */; };
 		9253A29F2305E73900628071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9253A29D2305E73900628071 /* Main.storyboard */; };
 		9253A2A12305E73C00628071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9253A2A02305E73C00628071 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		92220922230B428900B04353 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		92220924230B467700B04353 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		92220926230C940400B04353 /* ForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
+		9222096323146F3800B04353 /* YelpLocationInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpLocationInfoVC.swift; sourceTree = "<group>"; };
 		9253A2962305E73900628071 /* CityRundown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityRundown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9253A2992305E73900628071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9253A29E2305E73900628071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				92220920230B3CBA00B04353 /* CitySelectorViewController.swift */,
 				92220924230B467700B04353 /* LocationDetailViewController.swift */,
+				9222096323146F3800B04353 /* YelpLocationInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			files = (
 				9222091F230B3B8F00B04353 /* Forecast.swift in Sources */,
 				92220923230B428900B04353 /* Extensions.swift in Sources */,
+				9222096423146F3800B04353 /* YelpLocationInfoVC.swift in Sources */,
 				92220925230B467700B04353 /* LocationDetailViewController.swift in Sources */,
 				9253A2CD2305E90200628071 /* Yelp.swift in Sources */,
 				9253A2CF2305E91600628071 /* YelpController.swift in Sources */,
