@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UKP-Hl-GOl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </mapView>
                             <searchBar contentMode="redraw" text="" placeholder="Search " translatesAutoresizingMaskIntoConstraints="NO" id="3hz-tk-VnF">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1RM-cZ-Z21">
-                                <rect key="frame" x="0.0" y="100" width="414" height="327"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="309.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq4-Eh-6hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="-33"/>
+            <point key="canvasLocation" x="2215.9420289855075" y="-329.46428571428572"/>
         </scene>
         <!--Location Detail View Controller-->
         <scene sceneID="tVD-ct-kR4">
@@ -310,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2c-SI-SA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153.6231884057975" y="-32.142857142857139"/>
+            <point key="canvasLocation" x="3063.768115942029" y="-32.142857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="awB-ap-SrT">
@@ -319,13 +319,43 @@
                     <view key="view" contentMode="scaleToFill" id="Yck-aw-M17">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Rundown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-q1-iHz">
+                                <rect key="frame" x="41.5" y="145" width="331" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-KV-jGB">
+                                <rect key="frame" x="41.5" y="430" width="331" height="90"/>
+                                <color key="backgroundColor" red="0.1919991076" green="0.31750175359999999" blue="0.53946369890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search the map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v45-eB-w05" kind="show" id="0Yq-BY-Hmm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63525474069999999" green="0.81700265409999995" blue="0.88263398410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ok5-q1-iHz" firstAttribute="centerX" secondItem="p7H-9c-cAR" secondAttribute="centerX" id="4pD-8U-egk"/>
+                            <constraint firstItem="ok5-q1-iHz" firstAttribute="height" secondItem="Yck-aw-M17" secondAttribute="height" multiplier="0.1" id="9NY-aR-TEW"/>
+                            <constraint firstItem="ok5-q1-iHz" firstAttribute="centerY" secondItem="p7H-9c-cAR" secondAttribute="centerY" multiplier="0.4" id="dyk-A0-aXF"/>
+                            <constraint firstItem="Iur-KV-jGB" firstAttribute="width" secondItem="Yck-aw-M17" secondAttribute="width" multiplier="0.8" id="iPl-25-uEj"/>
+                            <constraint firstItem="Iur-KV-jGB" firstAttribute="centerX" secondItem="p7H-9c-cAR" secondAttribute="centerX" id="onq-ke-tJa"/>
+                            <constraint firstItem="Iur-KV-jGB" firstAttribute="height" secondItem="Yck-aw-M17" secondAttribute="height" multiplier="0.1" id="qiR-QJ-gpe"/>
+                            <constraint firstItem="Iur-KV-jGB" firstAttribute="centerY" secondItem="p7H-9c-cAR" secondAttribute="centerY" id="x20-Lz-RRj"/>
+                            <constraint firstItem="ok5-q1-iHz" firstAttribute="width" secondItem="Yck-aw-M17" secondAttribute="width" multiplier="0.8" id="ywu-GT-EzY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="p7H-9c-cAR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qtl-CH-SaA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sun-hD-7nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="-33"/>
+            <point key="canvasLocation" x="1373.913043478261" y="-32.142857142857139"/>
         </scene>
         <!--Yelp Location InfoVC-->
         <scene sceneID="jxf-5m-LIi">
@@ -470,7 +500,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZj-mN-6cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2974" y="-33"/>
+            <point key="canvasLocation" x="3884.057971014493" y="-33.482142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="saH-je-LHE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BAP-9A-erx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lpa-M5-JGT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.63525474069999999" green="0.81700265409999995" blue="0.88263398410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O5G-dq-KFF" kind="relationship" relationship="rootViewController" id="C67-ba-r4G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXf-Pj-uDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463.768115942029" y="-32.142857142857139"/>
         </scene>
     </scenes>
     <resources>
